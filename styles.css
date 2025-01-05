@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+}
+
+.header h1 {
+    display: inline;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+.header img {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);   
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: top;
+    align-items: left;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    background-image: url('./img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    width: 50%;
+}
+
+.hero p {
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+.social-icons {
+    color: cadetblue;
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+    filter: invert(60%) sepia(6%) saturate(2020%) hue-rotate(133deg) brightness(94%) contrast(90%);
+    padding: 1rem;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search input {
+    width: 200px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 0.5rem 1rem;
+    background-color:cadetblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.team-member {
+    width: 33%;
+    background-color: rgb(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 1rem;
+    height: 200px;
+}
+
+.team-member p {
+    width: 100%;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.team-member button {
+    padding: 0.5rem 1rem;
+    background-color:cadetblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgb(0,0,0,0.3);
+    border-radius: 5px;
+    height: 400px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 0.5rem 1rem;
+    background-color:cadetblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Container for the search results */
+#search-results {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if they don't fit */
+    gap: 20px; /* Spacing between cards */
+    justify-content: flex-start; /* Align cards in a row starting from the left */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual result card */
+.result-item {
+    background-color: #fff; /* Card background color */
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 250px; /* Fixed width for consistent size */
+    overflow: hidden; /* Prevent content overflow */
+    text-align: center; /* Center-align card content */
+    display: flex;
+    flex-direction: column; /* Stack content inside the card */
+}
+
+/* Card image */
+.result-item img {
+    width: 100%; /* Full width of the card */
+    height: 150px; /* Fixed height for consistency */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+    border-bottom: 1px solid #ddd; /* Separate image from text */
+}
+
+/* Card name */
+.result-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333; /* Darker text for readability */
+}
+
+/* Card description */
+.result-item p {
+    width: 100%;
+    font-size: 0.8rem;
+    color: #555; /* Subtle text color */
+    padding: 5px; /* Add padding inside the card */
+}

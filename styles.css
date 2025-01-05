@@ -187,49 +187,48 @@ body {
     cursor: pointer;
 }
 
-/* Container for the search results */
+
 #search-results {
     display: flex;
-    flex-wrap: wrap; /* Allows cards to wrap to the next line if they don't fit */
-    gap: 20px; /* Spacing between cards */
-    justify-content: flex-start; /* Align cards in a row starting from the left */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Individual result card */
+
 .result-item {
-    background-color: #fff; /* Card background color */
-    border: 1px solid #ddd; /* Light border for separation */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    width: 250px; /* Fixed width for consistent size */
-    overflow: hidden; /* Prevent content overflow */
-    text-align: center; /* Center-align card content */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
     display: flex;
-    flex-direction: column; /* Stack content inside the card */
+    flex-direction: column;
 }
 
-/* Card image */
+
 .result-item img {
-    width: 100%; /* Full width of the card */
-    height: 150px; /* Fixed height for consistency */
-    object-fit: cover; /* Maintain aspect ratio and crop excess */
-    border-bottom: 1px solid #ddd; /* Separate image from text */
+    width: 100%; 
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
 }
 
-/* Card name */
 .result-item h3 {
     font-size: 1.2rem;
     margin: 10px 0;
-    color: #333; /* Darker text for readability */
+    color: #333;
 }
 
-/* Card description */
+
 .result-item p {
     width: 100%;
     font-size: 0.8rem;
-    color: #555; /* Subtle text color */
-    padding: 5px; /* Add padding inside the card */
+    color: #555; 
+    padding: 5px; 
 }
